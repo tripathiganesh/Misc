@@ -1,8 +1,32 @@
 # Misc
-In Nested.scala 
+````In Nested.scala 
 stringDf is the raw nested json
 originalSchema is the schema of the json
 nestedDf is the nested dataframe
+````
+
+### raw sample Json 
+
+```
+{  
+    "a":"a1",
+    "balances":[  
+        {  
+            "ba":"ba1",
+            "financeAccountRollup":{  
+                "fara":"fara1"
+            }
+        } 
+    ],
+    "clients":{  
+        "cbb":"cbb1"
+    }
+}
+
+```
+
+
+
 ```
 scala> nestedDf.printSchema()
 root
