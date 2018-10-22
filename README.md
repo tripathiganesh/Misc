@@ -3,7 +3,7 @@ In Nested.scala
 stringDf is the raw nested json
 originalSchema is the schema of the json
 nestedDf is the nested dataframe
-
+```
 scala> nestedDf.printSchema()
 root
  |-- json_data: struct (nullable = true)
@@ -15,7 +15,9 @@ root
  |    |    |    |    |-- element: struct (containsNull = true)
  |    |    |    |    |    |-- farb: string (nullable = true)
  
+ ```
  
+ ```
  
  scala> nestedDf.dropNestedColumn("json_data.balances.financeAccountRollup.farb").printSchema()
 root
@@ -25,3 +27,4 @@ root
  |    |    |-- ba: array (nullable = true)
  |    |    |    |-- element: string (containsNull = true)
  |    |    |-- financeAccountRollup: struct (nullable = false)
+```
