@@ -184,6 +184,8 @@ GTEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = [
+    'hive3',
+    'beeswax3',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
